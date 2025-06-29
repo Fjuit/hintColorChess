@@ -1,0 +1,26 @@
+{
+  "name": "Not a cheat for chess ",
+  "description": "Brilliant move",
+  "version": "1.0",
+  "icons": {
+    "128": "brilliant128.png"
+  },
+  "permissions": ["storage", "activeTab", "tabs", "scripting"],
+  "host_permissions": ["https://www.chess.com/*"],
+  "manifest_version": 3,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+  "extension_pages": "default-src 'self'"
+},
+  "content_scripts": [
+    {
+      "js": ["point.js", "content.js"],
+      "matches": ["https://www.chess.com/*"]
+    }
+  ]
+}
