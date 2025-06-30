@@ -23,7 +23,8 @@ function handlePiece(someDiv) {
     }
   });
 
-  Point.changeBGColor();
+  Point.changeHintColor("piece")
+  
 
   picker.onchange = function () {
     browser.storage.local.set({ color: picker.value });
