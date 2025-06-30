@@ -1,7 +1,7 @@
 {
   "name": "Not a cheat for chess ",
   "description": "Brilliant move",
-  "version": "1.0",
+  "version": "1.0.0.1",
   "icons": {
     "128": "brilliant128.png"
   },
@@ -16,6 +16,13 @@
   },
   "content_security_policy": {
   "extension_pages": "default-src 'self'"
+},
+"browser_specific_settings": {
+  "gecko": {
+    "id": "addon@hintColorForChess",
+    "strict_min_version": "78.0"
+  },
+  "gecko_android": {}
 },
   "content_scripts": [
     {
